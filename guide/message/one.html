@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Test</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Test">
+    
+    <link rel="preload" href="/assets/css/0.styles.8f93fd0e.css" as="style"><link rel="preload" href="/assets/js/app.add9b033.js" as="script"><link rel="preload" href="/assets/js/2.f04eb891.js" as="script"><link rel="preload" href="/assets/js/14.b253e6a9.js" as="script"><link rel="prefetch" href="/assets/js/10.2c6bb0a0.js"><link rel="prefetch" href="/assets/js/11.71c90135.js"><link rel="prefetch" href="/assets/js/12.f494daeb.js"><link rel="prefetch" href="/assets/js/13.09a1ce21.js"><link rel="prefetch" href="/assets/js/15.46b59580.js"><link rel="prefetch" href="/assets/js/16.f5e492a3.js"><link rel="prefetch" href="/assets/js/17.fecf5a8f.js"><link rel="prefetch" href="/assets/js/18.0ea364de.js"><link rel="prefetch" href="/assets/js/3.8a0a92f2.js"><link rel="prefetch" href="/assets/js/4.18e65486.js"><link rel="prefetch" href="/assets/js/5.95640546.js"><link rel="prefetch" href="/assets/js/6.dae83f4e.js"><link rel="prefetch" href="/assets/js/7.a9e21fd1.js"><link rel="prefetch" href="/assets/js/8.7a30bc10.js"><link rel="prefetch" href="/assets/js/9.3fbfd9f0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f93fd0e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Test</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  API
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  API
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><p><strong>简要描述：</strong></p> <ul><li>短链接列表</li></ul> <p><strong>请求URL：</strong></p> <ul><li><code>http://api.nxcloud.com/api/shortLink/shortLinks</code></li></ul> <p><strong>请求方式：</strong></p> <ul><li>POST ，参数不要传body,用form表单方式提交</li></ul> <p><strong>参数：</strong></p> <table><thead><tr><th style="text-align:left;">参数名</th> <th style="text-align:left;">必选</th> <th style="text-align:left;">类型</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;">appkey</td> <td style="text-align:left;">是</td> <td style="text-align:left;">string</td> <td>短信应用appkey</td></tr> <tr><td style="text-align:left;">secretkey</td> <td style="text-align:left;">是</td> <td style="text-align:left;">string</td> <td>短信应用secretkey</td></tr> <tr><td style="text-align:left;">url</td> <td style="text-align:left;">是</td> <td style="text-align:left;">string</td> <td>长连接(请使用原始长连接)</td></tr></tbody></table> <p><strong>返回示例</strong></p> <div class="language- extra-class"><pre class="language-text"><code> {
+    &quot;code&quot;: &quot;0&quot;,
+    &quot;row&quot;: [
+		{&quot;short_link&quot;:&quot;http://xxx/xxxxxx&quot;},
+		{&quot;short_link&quot;:&quot;http://xxx/xxxxx2&quot;}
+	]
+}
+</code></pre></div><p><strong>返回参数说明</strong></p> <table><thead><tr><th style="text-align:left;">参数名</th> <th style="text-align:left;">类型</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;">code</td> <td style="text-align:left;">string</td> <td>结果编码</td></tr> <tr><td style="text-align:left;">row</td> <td style="text-align:left;">array</td> <td>诸多短链接</td></tr></tbody></table> <p><strong>备注</strong></p> <p>错误代码</p> <table><thead><tr><th style="text-align:left;">code</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:left;">0</td> <td>请求成功</td></tr> <tr><td style="text-align:left;">1</td> <td>应用不可用或key错误</td></tr> <tr><td style="text-align:left;">2</td> <td>参数错误或为空</td></tr> <tr><td style="text-align:left;">3</td> <td>余额不足</td></tr> <tr><td style="text-align:left;">9</td> <td>IP非法</td></tr> <tr><td style="text-align:left;">11</td> <td>邮箱格式有误</td></tr> <tr><td style="text-align:left;">88</td> <td>请求失败</td></tr> <tr><td style="text-align:left;">99</td> <td>系统错误</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.add9b033.js" defer></script><script src="/assets/js/2.f04eb891.js" defer></script><script src="/assets/js/14.b253e6a9.js" defer></script>
+  </body>
+</html>

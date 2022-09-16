@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Front Matter | Test</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Test">
+    
+    <link rel="preload" href="/assets/css/0.styles.8f93fd0e.css" as="style"><link rel="preload" href="/assets/js/app.add9b033.js" as="script"><link rel="preload" href="/assets/js/2.f04eb891.js" as="script"><link rel="preload" href="/assets/js/3.8a0a92f2.js" as="script"><link rel="prefetch" href="/assets/js/10.2c6bb0a0.js"><link rel="prefetch" href="/assets/js/11.71c90135.js"><link rel="prefetch" href="/assets/js/12.f494daeb.js"><link rel="prefetch" href="/assets/js/13.09a1ce21.js"><link rel="prefetch" href="/assets/js/14.b253e6a9.js"><link rel="prefetch" href="/assets/js/15.46b59580.js"><link rel="prefetch" href="/assets/js/16.f5e492a3.js"><link rel="prefetch" href="/assets/js/17.fecf5a8f.js"><link rel="prefetch" href="/assets/js/18.0ea364de.js"><link rel="prefetch" href="/assets/js/4.18e65486.js"><link rel="prefetch" href="/assets/js/5.95640546.js"><link rel="prefetch" href="/assets/js/6.dae83f4e.js"><link rel="prefetch" href="/assets/js/7.a9e21fd1.js"><link rel="prefetch" href="/assets/js/8.7a30bc10.js"><link rel="prefetch" href="/assets/js/9.3fbfd9f0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f93fd0e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Test</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/config/" class="nav-link router-link-active">
+  API
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/config/" class="nav-link router-link-active">
+  API
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/config/" aria-current="page" class="sidebar-link">Options</a></li><li><a href="/config/message.html" class="sidebar-link">短信计费标准</a></li><li><a href="/config/front-matter.html" aria-current="page" class="active sidebar-link">Front Matter</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/config/front-matter.html#title" class="sidebar-link">title</a></li><li class="sidebar-sub-header"><a href="/config/front-matter.html#tags" class="sidebar-link">tags</a></li><li class="sidebar-sub-header"><a href="/config/front-matter.html#date" class="sidebar-link">date</a></li><li class="sidebar-sub-header"><a href="/config/front-matter.html#author" class="sidebar-link">author</a></li><li class="sidebar-sub-header"><a href="/config/front-matter.html#location" class="sidebar-link">location</a></li><li class="sidebar-sub-header"><a href="/config/front-matter.html#summary" class="sidebar-link">summary</a></li></ul></li><li><a href="/config/palette.html" class="sidebar-link">Palette</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="front-matter"><a href="#front-matter" class="header-anchor">#</a> Front Matter</h1> <h2 id="title"><a href="#title" class="header-anchor">#</a> title</h2> <ul><li>Type: <code>string</code></li> <li>Default: <code>undefined</code></li> <li>Required: <code>true</code></li></ul> <p>The title for the page and content.</p> <p>e.g.</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml"><span class="token key atrule">title</span><span class="token punctuation">:</span> Hello World</span>
+<span class="token punctuation">---</span></span>
+</code></pre></div><h2 id="tags"><a href="#tags" class="header-anchor">#</a> tags</h2> <ul><li>Type: <code>string|string[]</code></li> <li>Default: <code>undefined</code></li> <li>Required: <code>false</code></li></ul> <p>The key to classifier pages and will also be displayed in the post:</p> <img src="/assets/img/tags.bbc62157.png" width="350px"> <img src="/assets/img/content-tags.dd3df460.png" width="350px"> <p>e.g.</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml"><span class="token key atrule">tags</span><span class="token punctuation">:</span> 
+  <span class="token punctuation">-</span> JavaScript
+  <span class="token punctuation">-</span> DOM</span>
+<span class="token punctuation">---</span></span>
+</code></pre></div><h2 id="date"><a href="#date" class="header-anchor">#</a> date</h2> <ul><li>Type: <code>YYYY-MM-DD</code></li> <li>Default: <code>undefined</code></li> <li>Required: <code>false</code></li></ul> <p>Our recommended format is <code>YYYY-MM-DD</code>, but it actually accepts multi formats. VuePress is using <code>js-yaml</code> which follows standard yaml types, so you can find all available formats <a href="https://yaml.org/type/timestamp.html" target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <p>Date for the post. This will be used for permalink, sorting and displayed in the layout:</p> <img src="/assets/img/date.86e50384.png" width="350px"> <img src="/assets/img/content-date.e1a07f8f.png" width="350px"> <p>e.g.</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml"><span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2016-10-20</span></span>
+<span class="token punctuation">---</span></span>
+</code></pre></div><h2 id="author"><a href="#author" class="header-anchor">#</a> author</h2> <ul><li>Type: <code>string</code></li> <li>Default: <code>undefined</code></li> <li>Required: <code>false</code></li></ul> <p>Author for the post. This will be displayed in the post:</p> <img src="/assets/img/author.36e9c3eb.png" width="350px"> <img src="/assets/img/content-author.0cb3632d.png" width="350px"> <p>e.g.</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml"><span class="token key atrule">author</span><span class="token punctuation">:</span> ULIVZ</span>
+<span class="token punctuation">---</span></span>
+</code></pre></div><h2 id="location"><a href="#location" class="header-anchor">#</a> location</h2> <ul><li>Type: <code>string</code></li> <li>Default: <code>undefined</code></li> <li>Required: <code>false</code></li></ul> <p>Location for the post. This will be displayed in the post:</p> <img src="/assets/img/location.ddc571e4.png" width="350px"> <img src="/assets/img/content-location.6500c0c7.png" width="350px"> <p>e.g.</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml"><span class="token key atrule">location</span><span class="token punctuation">:</span> Hangzhou</span>
+<span class="token punctuation">---</span></span>
+</code></pre></div><h2 id="summary"><a href="#summary" class="header-anchor">#</a> summary</h2> <ul><li>Type: <code>string</code></li> <li>Default: <code>undefined</code></li> <li>Required: <code>false</code></li></ul> <p>Summary for the post. This will be displayed in the post:</p> <p><img src="/assets/img/summary.da495ef6.png" alt="Summary"></p> <p>e.g.</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml"><span class="token key atrule">summary</span><span class="token punctuation">:</span> Here's a quick post on what I found.</span>
+<span class="token punctuation">---</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/config/message.html" class="prev">
+        短信计费标准
+      </a></span> <span class="next"><a href="/config/palette.html">
+        Palette
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.add9b033.js" defer></script><script src="/assets/js/2.f04eb891.js" defer></script><script src="/assets/js/3.8a0a92f2.js" defer></script>
+  </body>
+</html>
